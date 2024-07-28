@@ -1,3 +1,4 @@
+![Spotify-clone](https://github.com/user-attachments/assets/904b2f9b-45de-4873-9bcd-53484c5a9208)
 # Spotify-clone
 This project demonstrates how to recreate the sleek and modern user interface of Spotify using only HTML and CSS, showcasing fundamental web development skills.
 
