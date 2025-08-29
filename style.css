@@ -1,8 +1,44 @@
+:root {
+    --bg-color: black;
+    --text-color: #fff;
+    --sidebar-bg-color: #000;
+    --main-content-bg-color: #121212;
+    --nav-bg-color: #121212;
+    --library-bg-color: #121212;
+    --box-bg-color: #232323;
+    --card-bg-color: #232323;
+    --badge-bg-color: #fff;
+    --badge-text-color: #000;
+    --dark-badge-bg-color: #000;
+    --dark-badge-text-color: #fff;
+    --line-color: white;
+    --album-info-color: #bbb;
+    --music-icons-fill: #fff;
+}
+
+.light-mode {
+    --bg-color: #f0f0f0;
+    --text-color: #000;
+    --sidebar-bg-color: #f0f0f0;
+    --main-content-bg-color: #fff;
+    --nav-bg-color: #e0e0e0;
+    --library-bg-color: #e0e0e0;
+    --box-bg-color: #e0e0e0;
+    --card-bg-color: #d0d0d0;
+    --badge-bg-color: #000;
+    --badge-text-color: #fff;
+    --dark-badge-bg-color: #fff;
+    --dark-badge-text-color: #000;
+    --line-color: black;
+    --album-info-color: #555;
+    --music-icons-fill: #000;
+}
+
 body{
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    background-color: black;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     overflow: hidden;
 }
 .main{
@@ -11,7 +47,7 @@ body{
     padding: 0.5rem;
 }
 .sidebar{
-    background-color: #000;
+    background-color: var(--sidebar-bg-color);
     width: 340px;
     border-radius: 1rem;
     margin-right: 0.5rem;
@@ -30,7 +66,7 @@ body{
 }
 
 .main-content{
-    background-color: #121212;
+    background-color: var(--main-content-bg-color);
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
@@ -38,7 +74,7 @@ body{
 }
 
 .music-player{
-    background-color: black;
+    background-color: var(--bg-color);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -47,11 +83,11 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
 }
 
 .nav{
-    background-color: #121212;
+    background-color: var(--nav-bg-color);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -79,7 +115,7 @@ a{
 }
 
 .library{
-    background-color: #121212;
+    background-color: var(--library-bg-color);
     border-radius: 1rem;
     height: 100%;
     margin-top: 0.5rem;
@@ -112,7 +148,7 @@ a{
 }
 
 .box{
-    background-color: #232323;
+    background-color: var(--box-bg-color);
     height: 8rem;
     border-radius: 0.75rem;
     margin: 0.75rem 0 1.75rem 0;
@@ -131,8 +167,9 @@ a{
     opacity: 0.9;
 }
 .badge{
-    background-color: #fff;
-    border: white;
+    background-color: var(--badge-bg-color);
+    color: var(--badge-text-color);
+    border: none;
     border-radius: 100px;
     padding: 0.25rem 1rem;
     font-weight: 700;
@@ -150,7 +187,7 @@ a{
 .sticky-nav {
     position: sticky;
     top: 0;
-    background-color: #121212;
+    background-color: var(--main-content-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,8 +208,8 @@ a{
     transition: all 1s ;
 }
 .dark-badge{
-    background-color: #000;
-    color: #fff;
+    background-color: var(--dark-badge-bg-color);
+    color: var(--dark-badge-text-color);
     transition: all 1s ;
 }
 
@@ -195,7 +232,7 @@ a{
 }
 
 .card{
-    background-color: #232323;
+    background-color: var(--card-bg-color);
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -235,7 +272,7 @@ a{
 .line{
     width: 90%;
     height: 50%;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--line-color);
     opacity: 0.4;
 }
 
@@ -320,7 +357,7 @@ a{
 }
 .music-info .alb-p2 {
     font-size: 0.8em;
-    color: #bbb;
+    color: var(--album-info-color);
 }
 .music-icons {
     display: flex;
@@ -330,7 +367,7 @@ a{
 }
 
 .music-icons {
-    fill: #fff;
+    fill: var(--music-icons-fill);
     width: 20px;
     height: 20px;
     cursor: pointer;
